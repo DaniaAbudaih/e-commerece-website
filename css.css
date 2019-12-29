@@ -1,0 +1,47 @@
+body{
+ background-color:#B2D732;
+ color:#C21460;
+ margin-top:5em;}
+ .grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 4%;
+}
+.grid-item {
+  background-color: #F0F7D4;
+  border: 1px solid rgba(0, 0, 0, 0.8) ;
+  opacity:0.8;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+img{
+ width:250px;
+}
+a{color:#C21460;}
+.king{
+	margin-top:2em;
+}
+.icon-bar {
+  width: 100%;
+  background-color:#B8145B;
+  overflow: auto;
+}
+
+.icon-bar a {
+  float: left;
+  width: 20%;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 36px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color:#F0F7D4;
+}

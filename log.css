@@ -1,33 +1,21 @@
  body{ 
- background-color:#FCF0ED; 
+ background-color:#F0F7D4; 
  }
- form{
-	 text-align: left;
- }
- .log{  
- border:5px solid #E99C8B;
- margin-top:7em; 
- width:30%;
- background-color:#E99C8B;
-color:#95331D; 
- padding:4em; 
- font-family: sans-serif; 
- } 
  
  #Go{margin-top:3em;
      width:6em;
+	 border-radius: 8px;
 } 
+form{
+	text-align:center;
+	border:5px solid #B2D732;
+    margin-top:7em; 
+    width:30%;
+    background-color:#F0F7D4;
+    color:#B8145B; 
+    padding:4em; 
+}
+.uesrname {text-align:center;
 
-.form{text-align:left; 
 
- 
- 
-} 
-.namce{ 
- } 
- .name{width:200px;
-    
-	  } 
-.pas{width:200px;}
- .a{margin-top:2em;} 
-  
+}
