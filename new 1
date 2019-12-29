@@ -1,0 +1,82 @@
+<html>
+<head>
+<title> Weathar </title>
+<style type= text/css >
+body {
+background-image: url('sama.jpg');
+
+
+} 
+
+
+
+
+button {
+background-color : blue;
+border: none ;
+color : white ;
+text-aline: 15px 30px ;
+margin: 4px 2px;
+cursor: pointer;
+border-radius: 2px;}
+}
+
+div { 
+
+ border-radius: 25px;
+  background: url(paper.gif);
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 20px; 
+  width: 200px;
+  height: 150px;  
+}
+
+</style>
+
+</head>
+
+
+
+<body>
+
+<center>
+
+<div style="background-image: url('sama.jpg');">
+
+<input type="text"id="city"/>
+<button id="search"onclick="go()"> click </button>
+<div id="temp"> </div>
+<div id="main"> </div>
+<div id="max"> </div>
+<div id="humid"> </div>
+
+
+
+function go (){
+var citytext = document.getElementById("city").value;
+getData(citytext).then(data => {
+
+console.log(data);
+<div class = "">
+document.getElemntById("temp").innerHTML = data("main")["temp"];
+
+document.getElemntById("main").innerHTML = data("main")["temp"];
+
+document.getElemntById("max").innerHTML = data("main")["temp"];
+
+document.getElemntById("humid").innerHTML = data("main")["temp"];
+
+</div>
+});
+}
+
+async function getData(city){
+var response.jso();
+
+}
+</script>
+</center>
+</body>
+
+</html> 
