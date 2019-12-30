@@ -3,17 +3,19 @@
  }
  
  #Go{margin-top:3em;
-     width:6em;
+     width:10em;
 	 border-radius: 8px;
+	 color:#B8145B;
+	 background-color:black;
 } 
 form{
 	text-align:center;
 	border:5px solid #B2D732;
     margin-top:7em; 
-    width:30%;
+    width:20%;
     background-color:#F0F7D4;
     color:#B8145B; 
-    padding:4em; 
+    padding:5em; 
 }
 .uesrname {text-align:center;
 

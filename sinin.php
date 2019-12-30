@@ -16,8 +16,8 @@ if(isset($_POST['SinUp-submit'])) {
 	  
             if(!$conn){die("connection failad");
 			} 
-			
-		$sql = "INSERT INTO `users`(`FirstName`, `LastName`, `Email`, `password`) VALUES ('".$uesrname."','".$lastname."','".$Email."','".$password."')";
+			$hash= Password_hash($password,  PASSWORD_DEFAULT);
+		$sql = "INSERT INTO `users`(`FirstName`, `LastName`, `Email`, `password`) VALUES ('".$uesrname."','".$lastname."','".$Email."','".$hash."')";
         $result= mysqli_query($conn,$sql);
 		  
 		  if($result){

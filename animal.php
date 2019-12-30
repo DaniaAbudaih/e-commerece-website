@@ -3,49 +3,43 @@ session_start();
 if(isset($_SESSION['uesrname']))
 {
 	?>
+	
  <html>
- <style type="text/css">
- body{
-   background-color:#6050AA;
- color:#FB8604;
- margin-top:5em;}
- .grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  padding: 4%;
- 
-}
-.grid-item {
-  background-color:#C2F019;
-  border: 1px solid  #F0F7D4;
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
- opacity:0.8;
-  
-}
-img{
- width:250px;
-}
-.pceket:{width:10em;
-height:8em;
-margin-right:90%;
- opacity:0.9%;}
- </style> 
+<link rel="stylesheet" type="text/css" href="css.css">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  <body>
 
+ <div class="king">
+
+ <div class="icon-bar">
+  <a class="active" href="#"><i class="fa fa-home"></i></a> 
+  <a href="https://www.google.com/webhp?hl=ar&sa=X&ved=0ahUKEwiWo6evr9vmAhVDalAKHVdKDSwQPAgH"><i class="fa fa-search"></i></a> 
+  <a href="https://accounts.google.com/ServiceLogin?service=mail&passive=true&rm=false&continue=https://mail.google.com/mail/&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1#">
+  <i class="fa fa-envelope"></i></a> 
+  <a href="#"><i class="fa fa-globe"></i></a>
+  
+  <a href="logout.php" ><i class="fa fa-logout">  Loguot</i> </a>
+
+</div> 
+</div> 
+  
+ <br/>
+ <br/>
+ <h3 class="hello"> Hello <?php echo $_GET["u"];
+ ?>
+ 
+</h3>
+ 
  <center>
  <h2>
  <p> Selling animals </p>
  </h2>
- 
  </center>
  <div class="grid-container">
  <div class="grid-item">
 	<img src="necer.jpg" />
- 
 	<h4> Falcon </h4> <span>$60..</span>
-  
  </div>
  
   <div class="grid-item">
@@ -63,7 +57,9 @@ margin-right:90%;
  
   <div class="grid-item">
 	<img src="laion.jpg"/>
-	<h4> laion</h4> <span>$300</span>
+	
+	<a  href="img.html"><h4> laion</h4></a>
+  <span>$300</span> 
   </div>
   
  
@@ -88,18 +84,9 @@ margin-right:90%;
   <div class="grid-item">
   <img src="rapet.jpg"/>
   <h4>Raper</h4> <span>$180</span>
- </div> 
- <a href="logout.php">LogOut</a>
- <script>
- var img= document.getElementById("img");
-   modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
- </script>
- </body>
+ </div> </body>
  </html>
- 
-  <?php
+   <?php
  }
  else{header("location:login.html");
 			exit();}

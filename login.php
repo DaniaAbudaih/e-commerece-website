@@ -15,12 +15,16 @@ if(isset($_POST['login-submit'])) {
 		$sql = "SELECT * FROM `users` WHERE FirstName = '".$uesrname."'";
         $result= mysqli_query($conn,$sql);
 		  
+		
+		  
 		  if($result){
 			$r = mysqli_fetch_assoc($result);
-			if($r['password'] == $password){
+			$p= password_verify($password,$r['password']);
+			
+			if($p==true){
 				session_start();
 				$_SESSION["uesrname"]=$uesrname;
-				header("location:Grid.php");
+				header("location:animal.php?u=".$uesrname);
 				exit();
 			}
 			else {
